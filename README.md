@@ -1,16 +1,37 @@
 # dognet
 
-A new Flutter project.
+DogNet is a Flutter-based mobile application that identifies the breed of a dog from an image using a TensorFlow Lite model. The application performs on-device inference, enabling fast and offline predictions.
+
+## Project Overview
+
+This project demonstrates the integration of a machine learning model into a Flutter application. Users can upload or capture an image of a dog, and the app predicts the most likely dog breed using a pre-trained deep learning model converted to TensorFlow Lite.
+
+## Tech Stack
+
+- Flutter (Dart)
+- TensorFlow Lite
+- tflite_flutter
+- Android Studio
+
+## How It Works
+
+1. The user selects or captures an image of a dog  
+2. The image is preprocessed to match the model input requirements  
+3. The TensorFlow Lite model runs inference on the device  
+4. The predicted dog breed is displayed to the user  
 
 ## Getting Started
 
-This project is a starting point for a Flutter application.
+This project follows the standard Flutter project structure.
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+- Flutter SDK
+- Android Studio or VS Code
+- Android emulator or physical device
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### Running the Project
+
+```bash
+flutter pub get
+flutter run
